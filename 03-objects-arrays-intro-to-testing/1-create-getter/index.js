@@ -10,7 +10,7 @@ export function createGetter(path) {
     if (!Object.keys(obj).length) return;
 
     let result = obj;
-    for (let key of props) {
+    for (const key of props) {
       result = result[key];
     }
 
